@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>timer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer">
+        <h1>Timer</h1>
+        <form>
+          <input
+            type="number"
+            id="hour"
+            placeholder="hour"
+            autocomplete="off"
+          />
+          <input
+            type="number"
+            id="min"
+            placeholder="min"
+            autocomplete="off"
+            min="0"
+            max="59"
+          />
+          <input
+            type="number"
+            id="sec"
+            placeholder="sec"
+            autocomplete="off"
+            min="1"
+            max="59"
+          />
+          <div class="buttons">
+            <button class="btn" id="start" type="button">Start</button>
+            <button class="btn" id="reset" type="button">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
